@@ -1,3 +1,7 @@
+## About
+
+Simple project to display data from API, select the row, sort data by columns, display data with/without pagination.
+
 ## Available Scripts
 
 In the project directory, you can run:
