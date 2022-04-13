@@ -1,0 +1,156 @@
+h3 {
+  font-size: 25;
+  margin: 0;
+}
+
+.website-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+}
+
+.tables-container {
+  width: 600px;
+}
+
+.tables-container table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-top: 10px;
+}
+
+.tables-container table tr {
+  text-transform: capitalize;
+  padding: 0;
+}
+
+.tables-container table tr.selected {
+  background-color: #495fc5;
+  color: white;
+}
+
+.tables-container table tr th,
+.tables-container table tr td {
+  text-align: center;
+  height: 22px;
+  cursor: pointer;
+}
+
+.tables-container table tr th,
+.tables-container table tr td {
+  border: 1px solid #000000;
+  border-bottom: none;
+  border-left: none;
+}
+
+.tables-container table tr th.name,
+.tables-container table tr td.name {
+  width: 55%;
+}
+
+.tables-container table tr th.age,
+.tables-container table tr td.age {
+  width: 10%;
+}
+
+.tables-container table tr th.city,
+.tables-container table tr td.city {
+  width: 50%;
+}
+
+.tables-container table tr th:first-child,
+.tables-container table tr td:first-child {
+  border-left: 1px solid #000000;
+}
+
+.tables-container table tr:last-child td,
+.tables-container table tr:last-child th {
+  border-bottom: 1px solid #000000;
+}
+
+.tables-container table:first-of-type tr th,
+.tables-container table:first-of-type tr td {
+  cursor: default;
+}
+
+.tables-container .checkbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.pagination-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 20px;
+}
+
+.pagination-container .current-page {
+  width: 100px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.pagination-container div[class^="btn-"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #495fc5;
+  color: white;
+  margin: 0 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 5px;
+}
+
+.pagination-container div[class^="btn-"].disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/*# sourceMappingURL=App.css.map */

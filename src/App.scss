@@ -1,0 +1,126 @@
+$table-color: #000000;
+$main-color: #495fc5;
+
+h3 {
+  font-size: 25;
+  margin: 0;
+}
+
+.website-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.tables-container {
+  width: 600px;
+
+  table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: separate;
+    margin-top: 10px;
+
+    tr {
+      text-transform: capitalize;
+      padding: 0;
+
+      &.selected {
+        background-color: $main-color;
+        color: white;
+      }
+
+      th,
+      td {
+        text-align: center;
+        height: 22px;
+        cursor: pointer;
+      }
+
+      th,
+      td {
+        border: 1px solid $table-color;
+        border-bottom: none;
+        border-left: none;
+
+        &.name {
+          width: 55%;
+        }
+
+        &.age {
+          width: 10%;
+        }
+
+        &.city {
+          width: 50%;
+        }
+
+        &:first-child {
+          border-left: 1px solid $table-color;
+        }
+      }
+
+      &:last-child {
+        td,
+        th {
+          border-bottom: 1px solid $table-color;
+        }
+      }
+    }
+
+    &:first-of-type {
+      tr {
+        th,
+        td {
+          cursor: default;
+        }
+      }
+    }
+  }
+
+  .checkbox-container {
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  margin-top: 20px;
+
+  .current-page {
+    width: 100px;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  div[class^="btn-"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 35px;
+    cursor: pointer;
+    background-color: $main-color;
+    color: white;
+    margin: 0 10px;
+    user-select: none;
+    border-radius: 5px;
+
+    &.disabled {
+      opacity: 0.5;
+      cursor: default;
+    }
+  }
+}
